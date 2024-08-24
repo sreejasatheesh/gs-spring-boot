@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-container
-        image: sreeja147/demoproject:<+pipeline.variables.imageTag>
+        image: sreeja147/demoproject:latest
         ports:
         - containerPort: 8080
         env:
