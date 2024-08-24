@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: spring-boot-container
-        image: sreeja147/demoproject:9
+        image: sreeja147/demoproject:<+pipeline.stages.Build.spec.execution.steps.BuildAndPushDockerImage.output.imageTag>
         ports:
         - containerPort: 8080
         env:
